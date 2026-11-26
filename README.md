@@ -52,8 +52,8 @@ published that day.
 
 ## Verification
 
-- `entry.png`: 1024×1024, 125,500 bytes (limit 1 MiB),
-  sha256 `42c1c20a6739f129874a998b45b89b75264005075ad1370d5c869c608c0273fc`
+- `entry.png`: 1024×1024, 126,378 bytes (limit 1 MiB),
+  sha256 `476075026e95cbbb844a5fe84f377dcca44626963ef8e2cca4ab208d41ee6f9f`
 - Rendered twice locally: identical sha256 both runs.
 - The image was viewed and checked for overlap, truncation and legibility
   before committing.

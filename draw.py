@@ -159,7 +159,7 @@ def main():
         x = MARGIN + (i % 2) * (card_w + 16)
         y = grid_y + (i // 2) * (card_h + 16)
         draw_card(d, x, y, card_w, card_h, label, head, body,
-                  CARD, 25, 19)
+                  CARD, 25, 20)
 
     # ---- Bottom story: nor'easter ----
     draw_card(

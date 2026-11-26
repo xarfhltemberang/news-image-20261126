@@ -125,18 +125,18 @@ def main():
 
     # ---- Lead story: markets ----
     draw_card(
-        d, MARGIN, 156, W - 2 * MARGIN, 158,
+        d, MARGIN, 150, W - 2 * MARGIN, 167,
         "MARKETS  \u00b7  LEAD STORY",
         "Asia shares bounce back",
         "Nikkei +1.6%, South Korea +1.9% as Wall Street fights back from "
         "deep lows. S&P futures +0.5%. Nvidia ends down 3.9% at $149.30.",
-        LEAD_CARD, 33, 21, head_lines=1, body_lines=2,
+        LEAD_CARD, 33, 20, head_lines=1, body_lines=2,
         single_line_head=True)
 
     # ---- 2x2 grid ----
-    grid_y = 330
+    grid_y = 329
     card_w = (W - 2 * MARGIN - 16) // 2
-    card_h = 196
+    card_h = 212
     grid = [
         ("NORTH KOREA",
          "Kim urges wider nuclear deployment",
@@ -159,26 +159,26 @@ def main():
         x = MARGIN + (i % 2) * (card_w + 16)
         y = grid_y + (i // 2) * (card_h + 16)
         draw_card(d, x, y, card_w, card_h, label, head, body,
-                  CARD, 25, 20)
+                  CARD, 25, 19)
 
     # ---- Bottom story: nor'easter ----
     draw_card(
-        d, MARGIN, 754, W - 2 * MARGIN, 158,
+        d, MARGIN, 777, W - 2 * MARGIN, 167,
         "WEATHER  \u00b7  EAST COAST",
         "Nor\u2019easter slams East Coast on Thanksgiving",
         "Peak impact Thursday: gusts to 70 mph, major coastal flooding from "
         "Georgia to New York, 80 million+ under wind alerts. New Jersey "
         "declares a state of emergency.",
-        CARD, 33, 21, head_lines=1, body_lines=2,
+        CARD, 33, 20, head_lines=1, body_lines=2,
         single_line_head=True)
 
     # ---- Footer ----
-    d.rectangle([MARGIN, 926, W - MARGIN, 927], fill=RULE)
-    d.text((MARGIN, 938),
+    d.rectangle([MARGIN, 954, W - MARGIN, 955], fill=RULE)
+    d.text((MARGIN, 966),
            "Sources: Reuters  \u00b7  BBC  \u00b7  The Weather Channel / "
            "National Weather Service",
            font=F_FOOT, fill=MUTED)
-    d.text((MARGIN, 962),
+    d.text((MARGIN, 988),
            "Every story first reported on 26 November 2026  \u00b7  "
            "Built with Python + Pillow",
            font=F_CREDIT, fill=MUTED)
